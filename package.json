@@ -1,0 +1,36 @@
+{
+  "name": "orderable-files-explorer",
+  "displayName": "Orderable Files Explorer",
+  "description": "A custom file explorer that respects .fileorder to list and reorder your files.",
+  "version": "1.0.0",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:orderableFilesExplorer"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "orderableFilesExplorer",
+          "name": "Orderable Files Explorer"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.60.0",
+    "typescript": "^4.0.0"
+  }
+}
